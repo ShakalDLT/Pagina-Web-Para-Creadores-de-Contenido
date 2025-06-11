@@ -135,10 +135,13 @@ header {
 }
 
 .soporte-form form {
-  margin-top: 150px;
+  margin-top: 0; /* Ajustado para separar bien del título */
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .soporte-form input,
@@ -168,6 +171,16 @@ header {
   background: var(--bg-color);
 }
 
+/* NUEVO: Título grande y centrado para el formulario de soporte */
+.soporte-titulo {
+  font-size: 3.5rem;
+  font-weight: 700;
+  text-align: center;
+  color: var(--main-color);
+  margin-top: 120px;  /* separa del header fijo y del tope */
+  margin-bottom: 40px; /* espacio antes del formulario */
+}
+
 .wrapper {
   width: 440px;
   background: white;
@@ -185,15 +198,17 @@ header {
   flex-direction: column;
   align-items: center;
 }
+
 body.login-body {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: var(--text-color);
-    padding-top: 80px;
-    flex-direction: column;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--text-color);
+  padding-top: 80px;
+  flex-direction: column;
 }
+
 .form-box {
   width: 100%;
   padding: 40px;
@@ -203,10 +218,11 @@ body.login-body {
 }
 
 .form-box h2 {
-    font-size: 2em;
-    color: black;
-    text-align: center;
+  font-size: 2em;
+  color: black;
+  text-align: center;
 }
+
 .input-box {
   position: relative;
   width: 100%;
@@ -237,10 +253,12 @@ body.login-body {
   font-weight: 600;
   padding: 0 35px;
 }
+
 .input-box input:focus + label,
 .input-box input:not(:placeholder-shown) + label {
   display: none;
 }
+
 .input-box input {
   padding-left: 35px; /* espacio para el label */
   transition: padding-left 0.3s ease;
@@ -250,6 +268,7 @@ body.login-body {
 .input-box input:not(:placeholder-shown) {
   padding-left: 5px; /* texto inicia casi en el borde izquierdo */
 }
+
 .recover {
   font-size: 0.9em;
   color: black;

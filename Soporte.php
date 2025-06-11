@@ -1,6 +1,6 @@
 <?php
+session_start();
 include("php/conexion.php");
-
 
 if (isset($_POST["Enviar"])) {
     $Usuario = mysqli_real_escape_string($conexion, $_POST['Usuario']);
@@ -48,12 +48,17 @@ if (isset($_POST["Enviar"])) {
       <div class="bx bx-menu" id="menu-icon"></div>
      
       <ul class="navbar">
-        <li><a href="main.html" class="inicio-activo">Inicio</a></li>
+        <li><a href="main.php" class="inicio-activo">Inicio</a></li>
         <li><a href="#Categorias.html">Categorias</a></li>
         <li><a href="#En Directo">En Directo</a></li>
         <li><a href="Soporte.php">Soporte</a></li>
       </ul>
-      <a href="Login.html" class="btnlogin">Acceder</a>
+
+      <?php if (isset($_SESSION['id_usuario'])): ?>
+        <a href="cuenta.php" class="btnlogin">Cuenta</a>
+      <?php else: ?>
+        <a href="Login.php" class="btnlogin">Acceder</a>
+      <?php endif; ?>
    </header>
 
    <section class="Soporte" id="Soporte">
@@ -61,6 +66,9 @@ if (isset($_POST["Enviar"])) {
         <p>¿Tienes alguna duda?</p>
         <h2>Contáctanos</h2>
     </div>
+
+    <h1 style="font-size: 3rem; text-align: center; margin: 20px 0;">Formulario de Soporte</h1>
+
     <div class="soporte-form">
         <form action="Soporte.php" method="POST">
             <input type="text" name="Usuario" placeholder="Nombre de Usuario" required>
