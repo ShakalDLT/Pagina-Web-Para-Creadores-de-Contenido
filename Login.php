@@ -41,8 +41,8 @@ if (!empty($_POST)){
         <div class="bx bx-menu" id="menu-icon"></div>
         <ul class="navbar">
             <li><a href="main.php" class="inicio-activo">Inicio</a></li>
-            <li><a href="#Categorias.html">Categorias</a></li>
-            <li><a href="#En Directo">En Directo</a></li>
+            <li><a href="Categorias.php">Categorias</a></li>
+            <li><a href="Tendencias.php">Tendencias</a></li>
             <li><a href="Soporte.php">Soporte</a></li>
         </ul>
         <a href="Login.php" class="btnlogin">Acceder</a>
@@ -64,7 +64,7 @@ if (!empty($_POST)){
                     <label>Contraseña</label>
                 </div>
                 <div class="recover">
-                    <a href="#">¿Olvidaste la Contraseña?</a>
+                    <a href="Recuperar.php">¿Olvidaste la Contraseña?</a>
                 </div>
                 <button type="submit" class="btnIngresar">Ingresar</button>
                 <div class="ingreso-registro">

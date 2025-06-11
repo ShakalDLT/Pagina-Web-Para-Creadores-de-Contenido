@@ -49,8 +49,8 @@ if (isset($_POST["Enviar"])) {
      
       <ul class="navbar">
         <li><a href="main.php" class="inicio-activo">Inicio</a></li>
-        <li><a href="#Categorias.html">Categorias</a></li>
-        <li><a href="#En Directo">En Directo</a></li>
+        <li><a href="Categorias.php">Categorias</a></li>
+        <li><a href="Tendencias.php">Tendencias</a></li>
         <li><a href="Soporte.php">Soporte</a></li>
       </ul>
 
