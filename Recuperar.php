@@ -51,6 +51,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             <li><a href="Soporte.php">Soporte</a></li>
         </ul>
         <a href="Login.php" class="btnlogin">Acceder</a>
+        
     </header>
 
     <div class="wrapper">

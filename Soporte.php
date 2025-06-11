@@ -55,7 +55,8 @@ if (isset($_POST["Enviar"])) {
       </ul>
 
       <?php if (isset($_SESSION['id_usuario'])): ?>
-        <a href="cuenta.php" class="btnlogin">Cuenta</a>
+        <a href="Cuenta.php" class="btnlogin">Cuenta</a>
+        <a href="/PaginaWeb/php/logout.php" class="btnlogout">Cerrar sesión</a>
       <?php else: ?>
         <a href="Login.php" class="btnlogin">Acceder</a>
       <?php endif; ?>

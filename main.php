@@ -9,6 +9,22 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@11.2.8/swiper-bundle.min.css"/> 
+    <style>
+      .btnlogout {
+        font-weight: 500;
+        color: white;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        text-decoration: underline;
+        padding: 0;
+        font-size: 1rem;
+        margin-left: 15px;
+      }
+      .btnlogout:hover {
+        color: #d92323;
+      }
+    </style>
 </head>
 <body> 
    <header>
@@ -25,10 +41,9 @@ session_start();
       </ul>
 
       <?php if (isset($_SESSION['id_usuario'])): ?>
-        <!-- Usuario logueado -->
-        <a href="cuenta.php" class="btnlogin">Cuenta</a>
+        <a href="Cuenta.php" class="btnlogin">Cuenta</a>
+        <a href="/PaginaWeb/php/logout.php" class="btnlogout">Cerrar sesión</a>
       <?php else: ?>
-        <!-- Usuario no logueado -->
         <a href="Login.php" class="btnlogin">Acceder</a>
       <?php endif; ?>
    </header>
