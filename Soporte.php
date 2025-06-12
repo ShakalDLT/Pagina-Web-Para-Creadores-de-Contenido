@@ -49,7 +49,7 @@ if (isset($_POST["Enviar"])) {
      
       <ul class="navbar">
         <li><a href="main.php" class="inicio-activo">Inicio</a></li>
-        <li><a href="Categorias.php">Categorias</a></li>
+        <li><a href="Creadores.php">Creadores</a></li>
         <li><a href="Tendencias.php">Tendencias</a></li>
         <li><a href="Soporte.php">Soporte</a></li>
       </ul>
@@ -63,12 +63,8 @@ if (isset($_POST["Enviar"])) {
    </header>
 
    <section class="Soporte" id="Soporte">
-    <div class="Encabezado">
-        <p>¿Tienes alguna duda?</p>
-        <h2>Contáctanos</h2>
-    </div>
 
-    <h1 style="font-size: 3rem; text-align: center; margin: 20px 0;">Formulario de Soporte</h1>
+    <h1 class = "soporte-titulo">Formulario de Soporte</h1>
 
     <div class="soporte-form">
         <form action="Soporte.php" method="POST">

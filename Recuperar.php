@@ -46,7 +46,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         <div class="bx bx-menu" id="menu-icon"></div>
         <ul class="navbar">
             <li><a href="main.php" class="inicio-activo">Inicio</a></li>
-            <li><a href="Categorias.php">Categorias</a></li>
+            <li><a href="Creadores.php">Creadores</a></li>
             <li><a href="Tendencias.php">Tendencias</a></li>
             <li><a href="Soporte.php">Soporte</a></li>
         </ul>

@@ -39,7 +39,7 @@ $usuario = $result->fetch_assoc();
 <header>
   <ul class="navbar">
     <li><a href="main.php">Inicio</a></li>
-    <li><a href="Categorias.php">Categorías</a></li>
+    <li><a href="Creadores.php">Creadores</a></li>
     <li><a href="Tendencias.php">Tendencias</a></li>
     <li><a href="Soporte.php">Soporte</a></li>
   </ul>
